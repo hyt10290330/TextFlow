@@ -1,0 +1,58 @@
+.flow-content{
+    position: absolute;
+    width:670px;
+    height:700px;
+    top:50%;
+    left:50%;
+    margin-left: -335px;
+    margin-top: -350px;
+    -webkit-clip-path: ellipse(335px 350px at 335px 350px);
+    clip-path: ellipse(335px 350px at 335px 350px);
+    border: 1px solid #e8e8e8;
+}
+.flow-content a{
+    position: absolute;
+    color: orange;
+    text-decoration: none;
+    display: block;
+    border: #8e8e8e 1px transparent;
+    box-shadow: 0 0 5px #8e8e8e;
+    -webkit-box-shadow: 0 0 5px #8e8e8e;
+    -moz-box-shadow: 0 0 5px #8e8e8e;
+    background: #fff;
+    filter: alpha(opacity: 70);
+    opacity: 0.7;
+    font-size: 14px;
+    padding: 3px 5px;
+    font-family: arial;
+}
+.flow-content a:hover{
+    filter: alpha(opacity: 100);
+    opacity: 1;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.ellipse-line{
+    width: 664px;
+    height: 694px;
+    border: 3px dashed #4ba5cb;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left: -335px;
+    margin-top: -350px;
+    border-radius: 335px/350px;
+    animation: ellipseline 3s infinite linear;
+}
+@keyframes ellipseline{
+    0%{
+        opacity: 1
+    }
+    50%{
+        opacity: 0
+    }
+    100%{
+        opacity: 1
+    }
+}
